@@ -2,12 +2,195 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Dreamscapes Installation & Maintenance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dreamscapes Installation & Maintenance</title>
+  <meta name="description" content="Decks, fences, and garden structures built with care, craft, and longevity." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Dreamscapes Installation & Maintenance</h1>
-  <p>Decks, fences, and garden structures built with care.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Dreamscapes</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a class="btn" href="#contact">Request an Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Built places for rest and gathering.</h1>
+          <p class="lead">
+            Decks, fences, gates, and garden structures—crafted with respect for your home, your land, and the long haul.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#contact">Request an Estimate</a>
+            <a class="btn ghost" href="#work">See Recent Work</a>
+          </div>
+          <p class="micro">Serving the greater Seattle area</p>
+        </div>
+
+        <div class="hero-card">
+          <h2>Quick scope check</h2>
+          <ul>
+            <li>Decks + platforms</li>
+            <li>Fences + gates</li>
+            <li>Pergolas + pavilions</li>
+            <li>Repairs + maintenance</li>
+          </ul>
+          <p class="micro">Have plans? Great. No plans? Also fine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid3">
+          <article class="card">
+            <h3>Decks & Platforms</h3>
+            <p>New builds, rebuilds, framing fixes, waterproofing details, and clean finishes.</p>
+          </article>
+          <article class="card">
+            <h3>Fences & Gates</h3>
+            <p>Privacy, security, and curb appeal—built straight, solid, and aligned to your site.</p>
+          </article>
+          <article class="card">
+            <h3>Garden Structures</h3>
+            <p>Pergolas, pavilions, trellises, and features with a tasteful hint of myth.</p>
+          </article>
+          <article class="card">
+            <h3>Repairs & Maintenance</h3>
+            <p>Rot, wobble, sag, latch issues, post/base problems—fixed before they cascade.</p>
+          </article>
+          <article class="card">
+            <h3>Material Guidance</h3>
+            <p>Composite vs cedar vs treated lumber, hardware, finishes—practical tradeoffs explained.</p>
+          </article>
+          <article class="card">
+            <h3>Thoughtful Site Care</h3>
+            <p>Tree roots, drainage, access, existing structures—handled with respect.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section alt">
+      <div class="container">
+        <h2>Recent Work</h2>
+        <p class="sub">Swap these placeholders with real photos as you go.</p>
+
+        <div class="grid3">
+          <figure class="photo card">
+            <div class="ph"></div>
+            <figcaption>Composite deck + hidden fasteners</figcaption>
+          </figure>
+          <figure class="photo card">
+            <div class="ph"></div>
+            <figcaption>Cedar fence + gate + concrete footers</figcaption>
+          </figure>
+          <figure class="photo card">
+            <div class="ph"></div>
+            <figcaption>Garden structure / pavilion frame</figcaption>
+          </figure>
+        </div>
+
+        <div class="cta-center">
+          <a class="btn" href="#contact">Tell me what you’re building</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>
+            Dreamscapes is a small-build outfit focused on durable outdoor structures and clean workmanship.
+            I prioritize good site decisions, strong framing, and details that last through PNW weather.
+          </p>
+          <p class="micro">
+            Add your short origin story here—why you build, what you care about, and what clients can expect.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>What you can expect</h3>
+          <ul>
+            <li>Clear communication and realistic scope</li>
+            <li>Materials and details chosen for longevity</li>
+            <li>Respect for your property and existing landscape</li>
+            <li>A finish that looks intentional—not rushed</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Request an Estimate</h2>
+        <p class="sub">Send the basics and I’ll follow up with next steps.</p>
+
+        <form class="form" action="https://formspree.io/f/xojnqrap" method="POST">
+          <div class="grid2">
+            <label>
+              Name
+              <input name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+          </div>
+
+          <div class="grid2">
+            <label>
+              Location / neighborhood
+              <input name="location" placeholder="Seattle, Shoreline, Renton…" />
+            </label>
+            <label>
+              Project type
+              <select name="project_type">
+                <option>Deck</option>
+                <option>Fence / Gate</option>
+                <option>Pergola / Pavilion</option>
+                <option>Repair / Maintenance</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Tell me what you’re building (size, materials, timeline)
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" name="photos_ok" />
+            I can share photos / sketches by email
+          </label>
+
+          <button class="btn" type="submit">Send Request</button>
+          <p class="micro">Prefer email/text? Put that here.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Dreamscapes Installation & Maintenance</p>
+      <p class="micro">Seattle area</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
